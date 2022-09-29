@@ -1,4 +1,5 @@
 # %%
+import numpy as np
 import pandas as pd
 
 from ddf_utils.str import format_float_digits, to_concept_id
@@ -254,4 +255,71 @@ cdf3 = oncdf.set_index('concept')
 cdf_full2 = pd.concat([cdf2, cdf3])
 # %%
 cdf_full2.to_csv('../../ddf--concepts--discrete.csv')
+# %%
+pop = pd.read_csv('../../../ddf--gapminder--population/ddf--datapoints--population--by--country--year.csv')
+# %%
+pop
+# %%
+gs = pop.groupby(['country', 'year'])
+# %%
+df = gs.get_group(('usa', 2010))
+# %%
+df = pop.set_index(['country', 'year'])
+
+# %% 
+decs = ['d' + f'{x:0>2d}' for x in range(1, 11)]
+quans = ['q' + f'{x}' for x in range(1, 6)]
+# %%
+df1 = df.copy()
+df2 = df.copy()
+
+res_dec = list()
+res_qun = list()
+
+df1 = df1 / 10
+df2 = df2 / 5
+
+for i in range(1, 11):
+    dfd = df1.copy() 
+    dfd['decile'] = 'd' + f'{i:0>2d}'
+    dfd = dfd.set_index('decile', append=True)
+    res_dec.append(dfd)
+
+for i in range(1, 6):
+    dfq = df2.copy() 
+    dfq['quintile'] = 'q' + f'{i}'
+    dfq = dfq.set_index('quintile', append=True)
+    res_qun.append(dfq)
+
+# for idx in df.index:
+#     population = df.loc[idx, 'population']
+#     dec = pd.DataFrame({'decile': decs})
+#     dec['population'] = population / 10
+#     dec['country'] = idx[0]
+#     dec['time'] = idx[1]
+
+#     quan = pd.DataFrame({'quintile': quans})
+#     quan['population'] = population / 5
+#     quan['country'] = idx[0]
+#     quan['time'] = idx[1]
+
+#     res_qun.append(quan.set_index(['country', 'time', 'quintile']))
+#     res_dec.append(dec.set_index(['country', 'time', 'decile']))
+    
+# %%
+res_dec = pd.concat(res_dec)
+# %%
+res_dec = res_dec.sort_index()
+# %%
+res_qun = pd.concat(res_qun)
+# %%
+res_qun = res_qun.sort_index()
+# %%
+pop
+# %%
+pop.columns = ['country', 'time', 'population']
+# %%
+res_dec
+# %%
+res_qun
 # %%

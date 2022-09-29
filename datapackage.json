@@ -8,7 +8,7 @@
     "description": "ICEH indicators",
     "author": "Gapminder",
     "license": "CC-BY-4.0",
-    "created": "2022-09-28T15:59:25.299252+00:00",
+    "created": "2022-09-29T05:33:50.520660+00:00",
     "translations": [],
     "version": "0.0.1",
     "resources": [
@@ -444,6 +444,77 @@
                     "country",
                     "time",
                     "quintile"
+                ]
+            }
+        },
+        {
+            "name": "ddf--datapoints--population--by--country--time--decile",
+            "path": "ddf--datapoints--population--by--country--time--decile.csv",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "country"
+                    },
+                    {
+                        "name": "time"
+                    },
+                    {
+                        "name": "decile"
+                    },
+                    {
+                        "name": "population"
+                    }
+                ],
+                "primaryKey": [
+                    "country",
+                    "time",
+                    "decile"
+                ]
+            }
+        },
+        {
+            "name": "ddf--datapoints--population--by--country--time--quintile",
+            "path": "ddf--datapoints--population--by--country--time--quintile.csv",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "country"
+                    },
+                    {
+                        "name": "time"
+                    },
+                    {
+                        "name": "quintile"
+                    },
+                    {
+                        "name": "population"
+                    }
+                ],
+                "primaryKey": [
+                    "country",
+                    "time",
+                    "quintile"
+                ]
+            }
+        },
+        {
+            "name": "ddf--datapoints--population--by--country--time",
+            "path": "ddf--datapoints--population--by--country--time.csv",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "country"
+                    },
+                    {
+                        "name": "time"
+                    },
+                    {
+                        "name": "population"
+                    }
+                ],
+                "primaryKey": [
+                    "country",
+                    "time"
                 ]
             }
         },
@@ -2988,6 +3059,70 @@
                 "value": "msizehh",
                 "resources": [
                     "ddf--datapoints--msizehh--by--country--time--quintile"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "country",
+                    "decile",
+                    "time"
+                ],
+                "value": "population",
+                "resources": [
+                    "ddf--datapoints--population--by--country--time--decile"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "country",
+                    "quintile",
+                    "time"
+                ],
+                "value": "population",
+                "resources": [
+                    "ddf--datapoints--population--by--country--time--quintile"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "country",
+                    "time"
+                ],
+                "value": "population",
+                "resources": [
+                    "ddf--datapoints--population--by--country--time"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "decile",
+                    "geo",
+                    "time"
+                ],
+                "value": "population",
+                "resources": [
+                    "ddf--datapoints--population--by--country--time--decile"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "geo",
+                    "quintile",
+                    "time"
+                ],
+                "value": "population",
+                "resources": [
+                    "ddf--datapoints--population--by--country--time--quintile"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "geo",
+                    "time"
+                ],
+                "value": "population",
+                "resources": [
+                    "ddf--datapoints--population--by--country--time"
                 ]
             },
             {

@@ -221,18 +221,57 @@ cfull = cfull[['concept_type', 'indicator_name', 'indicator_set', 'group', 'cate
        'observations1', 'category2', 'reference_period',
        'reference_unit', 'indicator_denominator', 'indicator_numerator',
        'unicef', 'observations2']].copy()
+
+# %%
+cfull = cfull.rename(columns={'indicator_name': 'name'})
+
 # %%
 cfull.loc['income', 'concept_type'] = 'measure'
+cfull.loc['income', 'name'] = 'Average person income'
+cfull.loc['population', 'concept_type'] = 'measure'
+cfull.loc['income', 'name'] = 'Average person income'
 # %%
-cfull.to_csv('../../ddf--concepts--continuous.csv')
+cfull
+# %%
+descriptions = list()
+
+for i, row in cfull.iterrows():
+    if pd.isnull(row['description']):
+        d = 'No Description'
+    else:
+        d = row['description']
+    desc = [d]
+    for c in ['indicator_set', 'group', 'category1', 'sub_type',
+       'denominator', 'numerator', 'stratfiers', 'diferences_dhs_mics',
+       'observations1', 'category2', 'reference_period',
+       'reference_unit', 'indicator_denominator', 'indicator_numerator',
+       'unicef', 'observations2']:
+        if pd.isnull(row[c]):
+            content = 'N/A'
+        else:
+            content = row[c]
+        desc.append(r'\n'.join([c, content.replace('\n', r'\n')]))
+
+    desc = r'\n\n'.join(desc)
+    descriptions.append(desc)
+    
+# %%
+print(descriptions[-1].replace(r'\n', '\n'))
+
+# %%
+cfull_ = cfull[['concept_type', 'name']].copy()
+cfull_['description'] = descriptions
+# %%
+# %%
+cfull_.to_csv('../../ddf--concepts--continuous.csv')
 # %%
 cfull 
 # %%
-cols
+# cols
 # %%
-cols_id = cols.map(to_concept_id)
+# cols_id = cols.map(to_concept_id)
 # %%
-cdf2 = pd.DataFrame({'concept': cols_id, 'name': cols})
+cdf2 = pd.DataFrame({'concept': [], 'name': []})
 # %%
 cdf2
 # %%
@@ -240,7 +279,7 @@ cdf2 = cdf2.set_index('concept')
 # %%
 cdf2['concept_type'] = 'string'
 # %%
-cdf2.loc['time'] = ['Time', 'time']
+# cdf2.loc['time'] = ['Time', 'time']
 cdf2.loc['decile'] = ['Income Decile', 'entity_domain']
 cdf2.loc['quintile'] = ['Income Quintile', 'entity_domain']
 # %%
@@ -322,4 +361,12 @@ pop.columns = ['country', 'time', 'population']
 res_dec
 # %%
 res_qun
+# %%
+res_dec.to_csv('../../ddf--datapoints--population--by--country--time--decile.csv')
+# %%
+res_qun.to_csv('../../ddf--datapoints--population--by--country--time--quintile.csv')
+# %%
+pop
+# %%
+pop.to_csv('../../ddf--datapoints--population--by--country--time.csv', index=False)
 # %%

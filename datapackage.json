@@ -8,7 +8,7 @@
     "description": "ICEH indicators",
     "author": "Gapminder",
     "license": "CC-BY-4.0",
-    "created": "2022-09-29T05:33:50.520660+00:00",
+    "created": "2022-09-30T03:46:06.579350+00:00",
     "translations": [],
     "version": "0.0.1",
     "resources": [
@@ -24,58 +24,10 @@
                         "name": "concept_type"
                     },
                     {
-                        "name": "indicator_name"
-                    },
-                    {
-                        "name": "indicator_set"
-                    },
-                    {
-                        "name": "group"
-                    },
-                    {
-                        "name": "category1"
+                        "name": "name"
                     },
                     {
                         "name": "description"
-                    },
-                    {
-                        "name": "sub_type"
-                    },
-                    {
-                        "name": "denominator"
-                    },
-                    {
-                        "name": "numerator"
-                    },
-                    {
-                        "name": "stratfiers"
-                    },
-                    {
-                        "name": "diferences_dhs_mics"
-                    },
-                    {
-                        "name": "observations1"
-                    },
-                    {
-                        "name": "category2"
-                    },
-                    {
-                        "name": "reference_period"
-                    },
-                    {
-                        "name": "reference_unit"
-                    },
-                    {
-                        "name": "indicator_denominator"
-                    },
-                    {
-                        "name": "indicator_numerator"
-                    },
-                    {
-                        "name": "unicef"
-                    },
-                    {
-                        "name": "observations2"
                     }
                 ],
                 "primaryKey": "concept"
@@ -1405,24 +1357,6 @@
                 "primaryKey": [
                     "concept"
                 ],
-                "value": "category1",
-                "resources": [
-                    "ddf--concepts--continuous"
-                ]
-            },
-            {
-                "primaryKey": [
-                    "concept"
-                ],
-                "value": "category2",
-                "resources": [
-                    "ddf--concepts--continuous"
-                ]
-            },
-            {
-                "primaryKey": [
-                    "concept"
-                ],
                 "value": "color",
                 "resources": [
                     "ddf--concepts--discrete"
@@ -1442,28 +1376,10 @@
                 "primaryKey": [
                     "concept"
                 ],
-                "value": "denominator",
-                "resources": [
-                    "ddf--concepts--continuous"
-                ]
-            },
-            {
-                "primaryKey": [
-                    "concept"
-                ],
                 "value": "description",
                 "resources": [
                     "ddf--concepts--continuous",
                     "ddf--concepts--discrete"
-                ]
-            },
-            {
-                "primaryKey": [
-                    "concept"
-                ],
-                "value": "diferences_dhs_mics",
-                "resources": [
-                    "ddf--concepts--continuous"
                 ]
             },
             {
@@ -1488,51 +1404,6 @@
                 "primaryKey": [
                     "concept"
                 ],
-                "value": "group",
-                "resources": [
-                    "ddf--concepts--continuous"
-                ]
-            },
-            {
-                "primaryKey": [
-                    "concept"
-                ],
-                "value": "indicator_denominator",
-                "resources": [
-                    "ddf--concepts--continuous"
-                ]
-            },
-            {
-                "primaryKey": [
-                    "concept"
-                ],
-                "value": "indicator_name",
-                "resources": [
-                    "ddf--concepts--continuous"
-                ]
-            },
-            {
-                "primaryKey": [
-                    "concept"
-                ],
-                "value": "indicator_numerator",
-                "resources": [
-                    "ddf--concepts--continuous"
-                ]
-            },
-            {
-                "primaryKey": [
-                    "concept"
-                ],
-                "value": "indicator_set",
-                "resources": [
-                    "ddf--concepts--continuous"
-                ]
-            },
-            {
-                "primaryKey": [
-                    "concept"
-                ],
                 "value": "indicator_url",
                 "resources": [
                     "ddf--concepts--discrete"
@@ -1544,52 +1415,8 @@
                 ],
                 "value": "name",
                 "resources": [
+                    "ddf--concepts--continuous",
                     "ddf--concepts--discrete"
-                ]
-            },
-            {
-                "primaryKey": [
-                    "concept"
-                ],
-                "value": "numerator",
-                "resources": [
-                    "ddf--concepts--continuous"
-                ]
-            },
-            {
-                "primaryKey": [
-                    "concept"
-                ],
-                "value": "observations1",
-                "resources": [
-                    "ddf--concepts--continuous"
-                ]
-            },
-            {
-                "primaryKey": [
-                    "concept"
-                ],
-                "value": "observations2",
-                "resources": [
-                    "ddf--concepts--continuous"
-                ]
-            },
-            {
-                "primaryKey": [
-                    "concept"
-                ],
-                "value": "reference_period",
-                "resources": [
-                    "ddf--concepts--continuous"
-                ]
-            },
-            {
-                "primaryKey": [
-                    "concept"
-                ],
-                "value": "reference_unit",
-                "resources": [
-                    "ddf--concepts--continuous"
                 ]
             },
             {
@@ -1614,36 +1441,9 @@
                 "primaryKey": [
                     "concept"
                 ],
-                "value": "stratfiers",
-                "resources": [
-                    "ddf--concepts--continuous"
-                ]
-            },
-            {
-                "primaryKey": [
-                    "concept"
-                ],
-                "value": "sub_type",
-                "resources": [
-                    "ddf--concepts--continuous"
-                ]
-            },
-            {
-                "primaryKey": [
-                    "concept"
-                ],
                 "value": "tags",
                 "resources": [
                     "ddf--concepts--discrete"
-                ]
-            },
-            {
-                "primaryKey": [
-                    "concept"
-                ],
-                "value": "unicef",
-                "resources": [
-                    "ddf--concepts--continuous"
                 ]
             },
             {

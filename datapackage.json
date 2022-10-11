@@ -8,7 +8,7 @@
     "description": "ICEH indicators",
     "author": "Gapminder",
     "license": "CC-BY-4.0",
-    "created": "2022-09-30T03:46:06.579350+00:00",
+    "created": "2022-10-11T07:18:10.931504+00:00",
     "translations": [],
     "version": "0.0.1",
     "resources": [
@@ -129,6 +129,27 @@
             }
         },
         {
+            "name": "ddf--datapoints--cpmo--by--country--time",
+            "path": "ddf--datapoints--cpmo--by--country--time.csv",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "country"
+                    },
+                    {
+                        "name": "time"
+                    },
+                    {
+                        "name": "cpmo"
+                    }
+                ],
+                "primaryKey": [
+                    "country",
+                    "time"
+                ]
+            }
+        },
+        {
             "name": "ddf--datapoints--filtwater--by--country--time--decile",
             "path": "ddf--datapoints--filtwater--by--country--time--decile.csv",
             "schema": {
@@ -175,6 +196,27 @@
                     "country",
                     "time",
                     "quintile"
+                ]
+            }
+        },
+        {
+            "name": "ddf--datapoints--filtwater--by--country--time",
+            "path": "ddf--datapoints--filtwater--by--country--time.csv",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "country"
+                    },
+                    {
+                        "name": "time"
+                    },
+                    {
+                        "name": "filtwater"
+                    }
+                ],
+                "primaryKey": [
+                    "country",
+                    "time"
                 ]
             }
         },
@@ -229,6 +271,27 @@
             }
         },
         {
+            "name": "ddf--datapoints--fpsmo--by--country--time",
+            "path": "ddf--datapoints--fpsmo--by--country--time.csv",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "country"
+                    },
+                    {
+                        "name": "time"
+                    },
+                    {
+                        "name": "fpsmo"
+                    }
+                ],
+                "primaryKey": [
+                    "country",
+                    "time"
+                ]
+            }
+        },
+        {
             "name": "ddf--datapoints--impwatersdg--by--country--time--decile",
             "path": "ddf--datapoints--impwatersdg--by--country--time--decile.csv",
             "schema": {
@@ -275,6 +338,27 @@
                     "country",
                     "time",
                     "quintile"
+                ]
+            }
+        },
+        {
+            "name": "ddf--datapoints--impwatersdg--by--country--time",
+            "path": "ddf--datapoints--impwatersdg--by--country--time.csv",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "country"
+                    },
+                    {
+                        "name": "time"
+                    },
+                    {
+                        "name": "impwatersdg"
+                    }
+                ],
+                "primaryKey": [
+                    "country",
+                    "time"
                 ]
             }
         },
@@ -400,6 +484,27 @@
             }
         },
         {
+            "name": "ddf--datapoints--msizehh--by--country--time",
+            "path": "ddf--datapoints--msizehh--by--country--time.csv",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "country"
+                    },
+                    {
+                        "name": "time"
+                    },
+                    {
+                        "name": "msizehh"
+                    }
+                ],
+                "primaryKey": [
+                    "country",
+                    "time"
+                ]
+            }
+        },
+        {
             "name": "ddf--datapoints--population--by--country--time--decile",
             "path": "ddf--datapoints--population--by--country--time--decile.csv",
             "schema": {
@@ -521,6 +626,27 @@
             }
         },
         {
+            "name": "ddf--datapoints--sba--by--country--time",
+            "path": "ddf--datapoints--sba--by--country--time.csv",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "country"
+                    },
+                    {
+                        "name": "time"
+                    },
+                    {
+                        "name": "sba"
+                    }
+                ],
+                "primaryKey": [
+                    "country",
+                    "time"
+                ]
+            }
+        },
+        {
             "name": "ddf--datapoints--tfr--by--country--time--decile",
             "path": "ddf--datapoints--tfr--by--country--time--decile.csv",
             "schema": {
@@ -567,6 +693,27 @@
                     "country",
                     "time",
                     "quintile"
+                ]
+            }
+        },
+        {
+            "name": "ddf--datapoints--tfr--by--country--time",
+            "path": "ddf--datapoints--tfr--by--country--time.csv",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "country"
+                    },
+                    {
+                        "name": "time"
+                    },
+                    {
+                        "name": "tfr"
+                    }
+                ],
+                "primaryKey": [
+                    "country",
+                    "time"
                 ]
             }
         },
@@ -621,6 +768,27 @@
             }
         },
         {
+            "name": "ddf--datapoints--u5mr--by--country--time",
+            "path": "ddf--datapoints--u5mr--by--country--time.csv",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "country"
+                    },
+                    {
+                        "name": "time"
+                    },
+                    {
+                        "name": "u5mr"
+                    }
+                ],
+                "primaryKey": [
+                    "country",
+                    "time"
+                ]
+            }
+        },
+        {
             "name": "ddf--datapoints--vbcg--by--country--time--decile",
             "path": "ddf--datapoints--vbcg--by--country--time--decile.csv",
             "schema": {
@@ -667,6 +835,27 @@
                     "country",
                     "time",
                     "quintile"
+                ]
+            }
+        },
+        {
+            "name": "ddf--datapoints--vbcg--by--country--time",
+            "path": "ddf--datapoints--vbcg--by--country--time.csv",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "country"
+                    },
+                    {
+                        "name": "time"
+                    },
+                    {
+                        "name": "vbcg"
+                    }
+                ],
+                "primaryKey": [
+                    "country",
+                    "time"
                 ]
             }
         },
@@ -721,6 +910,27 @@
             }
         },
         {
+            "name": "ddf--datapoints--vdpt--by--country--time",
+            "path": "ddf--datapoints--vdpt--by--country--time.csv",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "country"
+                    },
+                    {
+                        "name": "time"
+                    },
+                    {
+                        "name": "vdpt"
+                    }
+                ],
+                "primaryKey": [
+                    "country",
+                    "time"
+                ]
+            }
+        },
+        {
             "name": "ddf--datapoints--vfull--by--country--time--decile",
             "path": "ddf--datapoints--vfull--by--country--time--decile.csv",
             "schema": {
@@ -767,6 +977,27 @@
                     "country",
                     "time",
                     "quintile"
+                ]
+            }
+        },
+        {
+            "name": "ddf--datapoints--vfull--by--country--time",
+            "path": "ddf--datapoints--vfull--by--country--time.csv",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "country"
+                    },
+                    {
+                        "name": "time"
+                    },
+                    {
+                        "name": "vfull"
+                    }
+                ],
+                "primaryKey": [
+                    "country",
+                    "time"
                 ]
             }
         },
@@ -821,6 +1052,27 @@
             }
         },
         {
+            "name": "ddf--datapoints--vmsl--by--country--time",
+            "path": "ddf--datapoints--vmsl--by--country--time.csv",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "country"
+                    },
+                    {
+                        "name": "time"
+                    },
+                    {
+                        "name": "vmsl"
+                    }
+                ],
+                "primaryKey": [
+                    "country",
+                    "time"
+                ]
+            }
+        },
+        {
             "name": "ddf--datapoints--vpolio--by--country--time--decile",
             "path": "ddf--datapoints--vpolio--by--country--time--decile.csv",
             "schema": {
@@ -867,6 +1119,27 @@
                     "country",
                     "time",
                     "quintile"
+                ]
+            }
+        },
+        {
+            "name": "ddf--datapoints--vpolio--by--country--time",
+            "path": "ddf--datapoints--vpolio--by--country--time.csv",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "country"
+                    },
+                    {
+                        "name": "time"
+                    },
+                    {
+                        "name": "vpolio"
+                    }
+                ],
+                "primaryKey": [
+                    "country",
+                    "time"
                 ]
             }
         },
@@ -2601,6 +2874,16 @@
             },
             {
                 "primaryKey": [
+                    "country",
+                    "time"
+                ],
+                "value": "cpmo",
+                "resources": [
+                    "ddf--datapoints--cpmo--by--country--time"
+                ]
+            },
+            {
+                "primaryKey": [
                     "decile",
                     "geo",
                     "time"
@@ -2623,6 +2906,16 @@
             },
             {
                 "primaryKey": [
+                    "geo",
+                    "time"
+                ],
+                "value": "cpmo",
+                "resources": [
+                    "ddf--datapoints--cpmo--by--country--time"
+                ]
+            },
+            {
+                "primaryKey": [
                     "country",
                     "decile",
                     "time"
@@ -2645,6 +2938,16 @@
             },
             {
                 "primaryKey": [
+                    "country",
+                    "time"
+                ],
+                "value": "filtwater",
+                "resources": [
+                    "ddf--datapoints--filtwater--by--country--time"
+                ]
+            },
+            {
+                "primaryKey": [
                     "decile",
                     "geo",
                     "time"
@@ -2663,6 +2966,16 @@
                 "value": "filtwater",
                 "resources": [
                     "ddf--datapoints--filtwater--by--country--time--quintile"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "geo",
+                    "time"
+                ],
+                "value": "filtwater",
+                "resources": [
+                    "ddf--datapoints--filtwater--by--country--time"
                 ]
             },
             {
@@ -2689,6 +3002,16 @@
             },
             {
                 "primaryKey": [
+                    "country",
+                    "time"
+                ],
+                "value": "fpsmo",
+                "resources": [
+                    "ddf--datapoints--fpsmo--by--country--time"
+                ]
+            },
+            {
+                "primaryKey": [
                     "decile",
                     "geo",
                     "time"
@@ -2711,6 +3034,16 @@
             },
             {
                 "primaryKey": [
+                    "geo",
+                    "time"
+                ],
+                "value": "fpsmo",
+                "resources": [
+                    "ddf--datapoints--fpsmo--by--country--time"
+                ]
+            },
+            {
+                "primaryKey": [
                     "country",
                     "decile",
                     "time"
@@ -2733,6 +3066,16 @@
             },
             {
                 "primaryKey": [
+                    "country",
+                    "time"
+                ],
+                "value": "impwatersdg",
+                "resources": [
+                    "ddf--datapoints--impwatersdg--by--country--time"
+                ]
+            },
+            {
+                "primaryKey": [
                     "decile",
                     "geo",
                     "time"
@@ -2751,6 +3094,16 @@
                 "value": "impwatersdg",
                 "resources": [
                     "ddf--datapoints--impwatersdg--by--country--time--quintile"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "geo",
+                    "time"
+                ],
+                "value": "impwatersdg",
+                "resources": [
+                    "ddf--datapoints--impwatersdg--by--country--time"
                 ]
             },
             {
@@ -2841,6 +3194,16 @@
             },
             {
                 "primaryKey": [
+                    "country",
+                    "time"
+                ],
+                "value": "msizehh",
+                "resources": [
+                    "ddf--datapoints--msizehh--by--country--time"
+                ]
+            },
+            {
+                "primaryKey": [
                     "decile",
                     "geo",
                     "time"
@@ -2863,6 +3226,16 @@
             },
             {
                 "primaryKey": [
+                    "geo",
+                    "time"
+                ],
+                "value": "msizehh",
+                "resources": [
+                    "ddf--datapoints--msizehh--by--country--time"
+                ]
+            },
+            {
+                "primaryKey": [
                     "country",
                     "decile",
                     "time"
@@ -2949,6 +3322,16 @@
             },
             {
                 "primaryKey": [
+                    "country",
+                    "time"
+                ],
+                "value": "sba",
+                "resources": [
+                    "ddf--datapoints--sba--by--country--time"
+                ]
+            },
+            {
+                "primaryKey": [
                     "decile",
                     "geo",
                     "time"
@@ -2971,6 +3354,16 @@
             },
             {
                 "primaryKey": [
+                    "geo",
+                    "time"
+                ],
+                "value": "sba",
+                "resources": [
+                    "ddf--datapoints--sba--by--country--time"
+                ]
+            },
+            {
+                "primaryKey": [
                     "country",
                     "decile",
                     "time"
@@ -2993,6 +3386,16 @@
             },
             {
                 "primaryKey": [
+                    "country",
+                    "time"
+                ],
+                "value": "tfr",
+                "resources": [
+                    "ddf--datapoints--tfr--by--country--time"
+                ]
+            },
+            {
+                "primaryKey": [
                     "decile",
                     "geo",
                     "time"
@@ -3011,6 +3414,16 @@
                 "value": "tfr",
                 "resources": [
                     "ddf--datapoints--tfr--by--country--time--quintile"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "geo",
+                    "time"
+                ],
+                "value": "tfr",
+                "resources": [
+                    "ddf--datapoints--tfr--by--country--time"
                 ]
             },
             {
@@ -3037,6 +3450,16 @@
             },
             {
                 "primaryKey": [
+                    "country",
+                    "time"
+                ],
+                "value": "u5mr",
+                "resources": [
+                    "ddf--datapoints--u5mr--by--country--time"
+                ]
+            },
+            {
+                "primaryKey": [
                     "decile",
                     "geo",
                     "time"
@@ -3059,6 +3482,16 @@
             },
             {
                 "primaryKey": [
+                    "geo",
+                    "time"
+                ],
+                "value": "u5mr",
+                "resources": [
+                    "ddf--datapoints--u5mr--by--country--time"
+                ]
+            },
+            {
+                "primaryKey": [
                     "country",
                     "decile",
                     "time"
@@ -3081,6 +3514,16 @@
             },
             {
                 "primaryKey": [
+                    "country",
+                    "time"
+                ],
+                "value": "vbcg",
+                "resources": [
+                    "ddf--datapoints--vbcg--by--country--time"
+                ]
+            },
+            {
+                "primaryKey": [
                     "decile",
                     "geo",
                     "time"
@@ -3099,6 +3542,16 @@
                 "value": "vbcg",
                 "resources": [
                     "ddf--datapoints--vbcg--by--country--time--quintile"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "geo",
+                    "time"
+                ],
+                "value": "vbcg",
+                "resources": [
+                    "ddf--datapoints--vbcg--by--country--time"
                 ]
             },
             {
@@ -3125,6 +3578,16 @@
             },
             {
                 "primaryKey": [
+                    "country",
+                    "time"
+                ],
+                "value": "vdpt",
+                "resources": [
+                    "ddf--datapoints--vdpt--by--country--time"
+                ]
+            },
+            {
+                "primaryKey": [
                     "decile",
                     "geo",
                     "time"
@@ -3147,6 +3610,16 @@
             },
             {
                 "primaryKey": [
+                    "geo",
+                    "time"
+                ],
+                "value": "vdpt",
+                "resources": [
+                    "ddf--datapoints--vdpt--by--country--time"
+                ]
+            },
+            {
+                "primaryKey": [
                     "country",
                     "decile",
                     "time"
@@ -3169,6 +3642,16 @@
             },
             {
                 "primaryKey": [
+                    "country",
+                    "time"
+                ],
+                "value": "vfull",
+                "resources": [
+                    "ddf--datapoints--vfull--by--country--time"
+                ]
+            },
+            {
+                "primaryKey": [
                     "decile",
                     "geo",
                     "time"
@@ -3187,6 +3670,16 @@
                 "value": "vfull",
                 "resources": [
                     "ddf--datapoints--vfull--by--country--time--quintile"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "geo",
+                    "time"
+                ],
+                "value": "vfull",
+                "resources": [
+                    "ddf--datapoints--vfull--by--country--time"
                 ]
             },
             {
@@ -3213,6 +3706,16 @@
             },
             {
                 "primaryKey": [
+                    "country",
+                    "time"
+                ],
+                "value": "vmsl",
+                "resources": [
+                    "ddf--datapoints--vmsl--by--country--time"
+                ]
+            },
+            {
+                "primaryKey": [
                     "decile",
                     "geo",
                     "time"
@@ -3235,6 +3738,16 @@
             },
             {
                 "primaryKey": [
+                    "geo",
+                    "time"
+                ],
+                "value": "vmsl",
+                "resources": [
+                    "ddf--datapoints--vmsl--by--country--time"
+                ]
+            },
+            {
+                "primaryKey": [
                     "country",
                     "decile",
                     "time"
@@ -3257,6 +3770,16 @@
             },
             {
                 "primaryKey": [
+                    "country",
+                    "time"
+                ],
+                "value": "vpolio",
+                "resources": [
+                    "ddf--datapoints--vpolio--by--country--time"
+                ]
+            },
+            {
+                "primaryKey": [
                     "decile",
                     "geo",
                     "time"
@@ -3275,6 +3798,16 @@
                 "value": "vpolio",
                 "resources": [
                     "ddf--datapoints--vpolio--by--country--time--quintile"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "geo",
+                    "time"
+                ],
+                "value": "vpolio",
+                "resources": [
+                    "ddf--datapoints--vpolio--by--country--time"
                 ]
             }
         ],

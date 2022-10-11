@@ -4,7 +4,7 @@ import pandas as pd
 
 from ddf_utils.str import format_float_digits, to_concept_id
 # %%
-data = pd.read_stata('../source/Income deciles 20220921 LV.dta')
+data = pd.read_csv('../source/Income decentiles 20221010 LV.csv')
 # %%
 data.head()
 # %%
@@ -128,7 +128,7 @@ for g, df in gs:
     dfg.columns = ['country', 'time', g]
     dfg[g] = dfg[g].map(lambda x: format_float_digits(x, 4))
     
-    dfg = dfg.sort_values(by=['country', 'time')
+    dfg = dfg.sort_values(by=['country', 'time'])
     dfg.to_csv(f'../../ddf--datapoints--{g}--by--country--time.csv', index=False)
 # %%
 def get_income2(data):
@@ -156,7 +156,14 @@ decs = pd.DataFrame(range(1, 11))
 # %%
 decs
 # %%
-decs['decile'] = 'd' + decs[0].astype(str)
+def to_dec(x):
+    return 'd{:0>2}'.format(x)
+
+#%%
+to_dec(1)
+
+# %%
+decs['decile'] = decs[0].map(to_dec)
 decs['name'] = 'decile ' + decs[0].astype(str)
 # %%
 decs
@@ -230,6 +237,7 @@ cfull.loc['income', 'concept_type'] = 'measure'
 cfull.loc['income', 'name'] = 'Average person income'
 cfull.loc['population', 'concept_type'] = 'measure'
 cfull.loc['income', 'name'] = 'Average person income'
+cfull.loc['population', 'name'] = 'Total Population'
 # %%
 cfull
 # %%
@@ -361,6 +369,9 @@ pop.columns = ['country', 'time', 'population']
 res_dec
 # %%
 res_qun
+# %%
+res_dec.index.names = ['country', 'time', 'decile']
+res_qun.index.names = ['country', 'time', 'quintile']
 # %%
 res_dec.to_csv('../../ddf--datapoints--population--by--country--time--decile.csv')
 # %%
